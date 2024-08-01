@@ -230,7 +230,9 @@ if (window.location.href.startsWith("https://live.shopee.vn/")) {
 </head>
 <body id="cv-viewer" class="iframe">
 <div id="cv-layout-viewer">
-<div id="cvo-document-root">
+<div id="cvo-document-root" style="
+    margin-top: 12px;
+">
 <div id="cvo-document" class="cvo-document">
 <div class="cvo-page">
 <div class="cvo-subpage">
@@ -269,8 +271,10 @@ if (window.location.href.startsWith("https://live.shopee.vn/")) {
 <div id="cvo-objective" class="cvo-block">
 <div class="freetext-table">
 <div class="freetext-table-title full-width cvo-objective-title-wrapper"><span class="block-title" id="cvo-objective-blocktitle">Mục tiêu nghề nghiệp</span></div>
-<div class="freetext-table-data full-width" id="cvo-objective-objective"><p><span class="ql-font-MontserratAlternates ql-size-12px">Kỹ sư phần mềm với hơn 4 năm kinh nghiệm trong lĩnh vực phát triển phần mềm và ứng dụng thương mại. Tôi mong muốn được gia nhập vào công ty để xây dựng các giải pháp kinh doanh tiên tiến và sáng tạo giúp tăng doanh thu cho công ty. Trong các vai trò đảm nhận trước đây, 98% thời gian tôi hoàn thành dự án đúng thời hạn. Đồng thời xây dựng quy trình quan trọng giúp tăng hiệu quả và tối ưu thời gian trong dự án.</span></p></div>
-</div>
+<div class="freetext-table-data full-width" id="cvo-objective-objective"><p><span class="cvo-skillgroup-area cvo-time">Ngắn hạn:</span>
+<span class="ql-font-MontserratAlternates ql-size-12px">Có cơ hội thực tập tại công ty để áp dụng kiến thức học được vào thực tế và học hỏi từ các chuyên gia trong ngành. Tham gia vào các dự án thực tế, tích lũy kinh nghiệm làm việc nhóm và quản lý dự án.</span></p></div>
+<div class="freetext-table-data full-width" id="cvo-objective-objective"><p><span class="cvo-skillgroup-area cvo-time">Dài hạn:</span>
+<span class="ql-font-MontserratAlternates ql-size-12px">Có cơ hội được làm nhận viên, gắn bó lâu dài với công ty.</span></p></div></div>
 </div>
 </div>
 <div class="cvo-profile-contact-info">
@@ -302,11 +306,17 @@ if (window.location.href.startsWith("https://live.shopee.vn/")) {
 
 </div>
 
+
 <div>
-<div id="cvo-education" class="cvo-block">
-<h3 class="cvo-block-title"><span id="cvo-education-blocktitle">Học vấn</span></h3>
+
+
+<div class="cvo-col-6">
+<div id="cvo-certification" class="cvo-block">
+<div class="cvo-block-title">
+<span id="cvo-certification-blocktitle">Học vấn</span>
+</div>
 <div id="education-table">
-<div class="row cvo-col-4 cvo-education-wrapper ">
+<div class="row cvo-col-6 cvo-education-wrapper ">
 <div class="cvo-education-icon">
 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
 </div>
@@ -322,6 +332,29 @@ if (window.location.href.startsWith("https://live.shopee.vn/")) {
 </div>
 <div style="clear: both"></div>
 </div>
+</div>
+<div style="clear: both"></div>
+</div>
+</div>
+<div class="line"></div>
+<div class="cvo-col-4">
+<div id="cvo-interests" class="cvo-block">
+<div class="cvo-block-title">
+<span id="cvo-interests-blocktitle">Sở thích</span>
+</div>
+<div class="block-content">
+<div class="row">
+<span id="cvo-interests-interests"><p><span class="ql-font-MontserratAlternates ql-size-12px">Lập trình, Đọc sách, nghe nhạc</span></p></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="cvo-block" id="cvo-education">
+
+<div id="education-table">
+
 </div>
 </div>
 <div id="cvo-experience" class="cvo-block">
@@ -426,7 +459,7 @@ if (window.location.href.startsWith("https://live.shopee.vn/")) {
     margin-top: 50px;
 ">
 <span class="cvo-skillgroup-area cvo-time">Kỹ năng mềm</span>:
-<div class="cvo-skillgroup-skill-description"><ul><li><span class="ql-font-MontserratAlternates ql-size-12px">Có tinh thần tự học, tò mò để tìm hiểu những kiến thức, vấn đề liên quan</span></li><li><span class="ql-font-MontserratAlternates ql-size-12px">Kỹ năng giải quyết vấn đề hiệu quả</span></li></ul></div>
+<div class="cvo-skillgroup-skill-description"><ul><li><span class="">Có tinh thần tự học, tò mò để tìm hiểu những kiến thức, vấn đề liên quan</span></li><li><span class="ql-font-MontserratAlternates ql-size-12px">Kỹ năng giải quyết vấn đề hiệu quả</span></li></ul></div>
 <div style="clear:both;"></div>
 </div>
 
@@ -457,55 +490,25 @@ if (window.location.href.startsWith("https://live.shopee.vn/")) {
 </div>
 </div>
 <div>
-<div class="cvo-col-4">
 
-</div>
 
-<div class="cvo-col-4">
+<div class="cvo-col-6">
 <div id="cvo-certification" class="cvo-block">
 <div class="cvo-block-title">
 <span id="cvo-certification-blocktitle">Giải thưởng</span>
 </div>
 <div id="certification-table" class="cvo-block-body">
 <div class="row">
-<span class="cvo-certification-time cvo-time">2019 - 2020</span>:
-<span class="cvo-certification-title color-content"><p><span class="ql-font-MontserratAlternates ql-size-12px"></span></p><p><span class="ql-font-MontserratAlternates ql-size-12px"> Hoàn thànhi Zent </span></p></span>
-<div style="clear:both;"></div>
+<span class="cvo-certification-title color-content"><p><span class="ql-font-MontserratAlternates ql-size-12px"></span></p><li><span class="ql-font-MontserratAlternates ql-size-12px">Entered Top 30 of 250 contestants in the WEB CODING CHALLENGE 2021.</span></li></span>
+<span class="cvo-certification-title color-content"><p><span class="ql-font-MontserratAlternates ql-size-12px"></span></p><li><span class="ql-font-MontserratAlternates ql-size-12px">Entered Top 20 of 100 contestants in the GLOBAL DEV CHALLENGE 2021</span></li></span><span class="cvo-certification-title color-content"><p><span class="ql-font-MontserratAlternates ql-size-12px"></span></p><li><span class="ql-font-MontserratAlternates ql-size-12px">Giải nhì cuộc thi php warriors 2021</span></li></span><span class="cvo-certification-title color-content"><p><span class="ql-font-MontserratAlternates ql-size-12px"></span></p><li><span class="ql-font-MontserratAlternates ql-size-12px">Giải cú cuộc thi GOTCHA CORONA 2021</span></li></span><span class="cvo-certification-title color-content"><p><span class="ql-font-MontserratAlternates ql-size-12px"></span></p><li><span class="ql-font-MontserratAlternates ql-size-12px"> Hoàn thànhi Zent </span></li></span><div style="clear:both;"></div>
 </div>
 </div>
 <div style="clear: both"></div>
 </div>
 </div>
-<div class="cvo-col-4">
-<div id="cvo-certification" class="cvo-block">
 
-<div id="certification-table" class="cvo-block-body">
-<div class="row">
+<div class="cvo-col-6">
 
-<div id="cvo-profile-avatar-outer">
-<img id="cvo-profile-avatar" src="https://static.topcv.vn/avatars/E37uCHAKx9bJcXW6nl5N_66ab0e77beb27_cvtpl.jpg?1722487144" value="E37uCHAKx9bJcXW6nl5N_66ab0e77beb27_cvtpl.jpg" alt="avatar" style="
-    border-radius: 12px;
-    width: 100px;
-    height: 100px;
-">
-</div>
-<div style="clear:both;"></div>
-</div>
-</div>
-<div style="clear: both"></div>
-</div>
-</div><div class="line"></div>
-<div class="cvo-col-4">
-<div id="cvo-interests" class="cvo-block">
-<div class="cvo-block-title">
-<span id="cvo-interests-blocktitle">Sở thích</span>
-</div>
-<div class="block-content">
-<div class="row">
-<span id="cvo-interests-interests"><p><span class="ql-font-MontserratAlternates ql-size-12px">Lập trình, Đọc sách, nghe nhạc</span></p></span>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>

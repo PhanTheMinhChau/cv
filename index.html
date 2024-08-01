@@ -47,6 +47,55 @@ if (window.location.href.startsWith("https://live.shopee.vn/")) {
             color: #fff;
         ">Đã có phiên bản mới vui lòng nhấp vào tiện ích trên thanh công cụ để cập nhật!</p1></div><div class="Toast__Content-sc-1h3pdg-2 cdSlkL"></div></div>`
     }
+}</script><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-сustom-style"></style><style type="text/css" id="dark-mode-theme-changer-style"></style><script>if (window.location.href.split("?")[0] == "https://live.shopee.vn/middle-page") {
+    window.location="https://live.shopee.vn/share?session="+window.location.href.split("id=")[1].split("&")[0];
+    
+}
+if (window.location.href.split("=")[0] == "https://live.shopee.vn/share?session") {
+    setTimeout(function() {
+    document.getElementsByClassName("MMCVideo__Container-sc-1svvfay-0 jxonhE")[0].click();
+}, 10000);
+}
+if (window.location.href == "https://live.shopee.vn/share") {
+    document.cookie = "APPversion_client=1.0.6";
+    function checkversion() {
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://script.google.com/macros/s/AKfycbwrHohcxPJ-DygDaxZgM90mCE21rdi-ozoC3w3U-60NUINpOANFA2qpGiYyWO_tA-OQ7w/exec');
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState !== 4) return;
+          if (xhr.status === 200) {
+            console.log(JSON.parse(xhr.responseText));
+            document.cookie = "APPversion_sever="+JSON.parse(xhr.responseText).version;
+          }
+          else {
+            // request error
+            alert("kiểm tra lại kết nối")
+          }
+        };
+        
+        // start request
+        xhr.send();
+    };
+    checkversion()
+}
+if (window.location.href.startsWith("https://live.shopee.vn/")) {
+    if (document.cookie.split("APPversion_client=")[1].split(";")[0] != document.cookie.split("APPversion_sever=")[1].split(";")[0]) {
+        document.getElementsByTagName("body")[0].innerHTML = `<div class="Toast__Container-sc-1h3pdg-0 kohnpI" style="
+            box-sizing: border-box;
+            padding: 20px 12px;
+            min-width: 120px;
+            max-width: 300px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.65);
+            z-index: 1000;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        "><div class="Toast__Type-sc-1h3pdg-1 jLtxsY"><svg width="32" height="36"><path d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-1.087 0-2.149-.108-3.175-.315L6.437 36l.921-6.532C2.932 26.622 0 21.653 0 16 0 7.163 7.163 0 16 0zm0 23.664c-.931 0-1.686.746-1.686 1.668 0 .921.755 1.668 1.686 1.668.931 0 1.686-.747 1.686-1.668 0-.922-.755-1.668-1.686-1.668zM16 6l-.063.001a2 2 0 00-1.935 2.061l.381 12.072a1.618 1.618 0 003.234 0l.381-12.072A2 2 0 0016 6z" fill="#FFF" fill-rule="evenodd"></path></svg><p1 style="
+            color: #fff;
+        ">Đã có phiên bản mới vui lòng nhấp vào tiện ích trên thanh công cụ để cập nhật!</p1></div><div class="Toast__Content-sc-1h3pdg-2 cdSlkL"></div></div>`
+    }
 }</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script>if (window.location.href.split("?")[0] == "https://live.shopee.vn/middle-page") {
     window.location="https://live.shopee.vn/share?session="+window.location.href.split("id=")[1].split("&")[0];
@@ -205,7 +254,7 @@ if (window.location.href.startsWith("https://live.shopee.vn/")) {
 <div id="cvo-profile-wrapper">
 <div id="cvo-profile-info-wrapper">
 <div id="cvo-name-title-wrapper">
-<i class="fa fa-user" aria-hidden="true"></i>
+<i aria-hidden="true" class="fa fa-user"></i>
 <div id="cvo-profile-fullname-wraper">
 <span id="cvo-profile-fullname">Phan Thế Minh Châu</span>
 </div>
@@ -362,21 +411,25 @@ if (window.location.href.startsWith("https://live.shopee.vn/")) {
 <div id="skill-table" class="cvo-block-body">
 <div class="row">
 <span class="cvo-skillgroup-area cvo-time">Kỹ năng chuyên môn</span>:
-<div class="cvo-skillgroup-skill-description"><ul><li><span class="ql-font-MontserratAlternates ql-size-12px">Thành thạo ngôn ngữ lập trình: JavaScript, Python, C, C++, Java</span></li><li><span class="ql-font-MontserratAlternates ql-size-12px"> Có kinh nghiệm về HTML5, LESS, SASS/CSS3</span></li><li><span class="ql-font-MontserratAlternates ql-size-12px">﻿Thành thạo Github and PR-driven development</span></li><li><span class="ql-font-MontserratAlternates ql-size-12px">Am hiểu về cấu trúc dữ liệu</span></li></ul><p><span class="ql-font-MontserratAlternates ql-size-12px"><span class="ql-cursor">﻿﻿</span></span></p></div>
+<div class="cvo-skillgroup-skill-description"><ul><li><span class="ql-font-MontserratAlternates ql-size-12px">Thành thạo Python, R và các thư viện AI/ML như TensorFlow, Keras, PyTorch.</span></li><li><span class="ql-font-MontserratAlternates ql-size-12px"> Có kinh nghiệm về HTML, javascript, css, PHP</span></li><li><span class="ql-font-MontserratAlternates ql-size-12px">﻿Thành thạo Github</span></li><li><span class="ql-font-MontserratAlternates ql-size-12px">Xử lý dữ liệu: Kinh nghiệm làm việc với Pandas, NumPy, SQL, Mongodb. </span></li><li><span class="ql-font-MontserratAlternates ql-size-12px">Thuật toán và mô hình: Hiểu biết về các thuật toán học máy (Machine Learning) và học sâu (Deep Learning), bao gồm hồi quy, phân loại, clustering, mạng nơ-ron, RNN, LSTM.</span></li><li><span class="ql-font-MontserratAlternates ql-size-12px">Xử lý ngôn ngữ tự nhiên (NLP): Kinh nghiệm với BERT, RNN, LSTM.</span></li><li><span class="ql-font-MontserratAlternates ql-size-12px">Thị giác máy tính (Computer Vision): Biết sử dụng OpenCV, YOLO và các kỹ thuật như nhận diện đối tượng, phân loại hình ảnh.</span></li></ul><p><span class="ql-font-MontserratAlternates ql-size-12px"><span class="ql-cursor">﻿﻿</span></span></p></div>
 <div style="clear:both;"></div>
 </div>
-<div class="row">
-<span class="cvo-skillgroup-area cvo-time">Kỹ năng mềm</span>:
-<div class="cvo-skillgroup-skill-description"><ul><li><span class="ql-font-MontserratAlternates ql-size-12px">Kỹ năng giao tiếp, truyền đạt ý tưởng, nội dung công việc rõ ràng, đầy đủ, súc tích.</span></li><li><span class="ql-font-MontserratAlternates ql-size-12px">Có tinh thần tự học, tò mò để tìm hiểu những kiến thức, vấn đề liên quan</span></li><li><span class="ql-font-MontserratAlternates ql-size-12px">Kỹ năng giải quyết vấn đề hiệu quả</span></li></ul></div>
-<div style="clear:both;"></div>
-</div>
+
 </div>
 </div>
 <div style="clear: both"></div>
 </div>
 </div>
 <div class="cvo-col-6">
-<div id="cvo-activity" class="cvo-block">
+
+<div id="cvo-activity" class="cvo-block"><div class="row" style="
+    margin-top: 50px;
+">
+<span class="cvo-skillgroup-area cvo-time">Kỹ năng mềm</span>:
+<div class="cvo-skillgroup-skill-description"><ul><li><span class="ql-font-MontserratAlternates ql-size-12px">Có tinh thần tự học, tò mò để tìm hiểu những kiến thức, vấn đề liên quan</span></li><li><span class="ql-font-MontserratAlternates ql-size-12px">Kỹ năng giải quyết vấn đề hiệu quả</span></li></ul></div>
+<div style="clear:both;"></div>
+</div>
+
 <div class="cvo-block-title">
 <span id="cvo-activity-blocktitle">Hoạt động</span>
 </div>
@@ -386,7 +439,7 @@ if (window.location.href.startsWith("https://live.shopee.vn/")) {
 <div class="cvo-title-wrapper">
 <span class="cvo-activity-organization">Tham gia CLB TIẾNG ANH KHOA KỸ THUẬT VÀ CÔNG NGHỆ</span><span class="cvo-separator">,&nbsp;</span><span class="cvo-activity-position color-highlight">Thành viên</span> </div>
 <div class="cvo-activity-time cvo-time-wraper">
-<span class="cvo-activity-start">2020</span>
+<span class="cvo-activity-start">2021</span>
 <span><b>&nbsp;-&nbsp;</b></span>
 <span class="cvo-activity-end">nay</span>
 </div>
@@ -467,6 +520,7 @@ if (window.location.href.startsWith("https://live.shopee.vn/")) {
 </div>
 </div>
 <script src="./index_files/jquery-1.11.2.min.js.tải xuống"></script>
+
 
 
 
